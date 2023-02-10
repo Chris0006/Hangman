@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #332C39;
+    color: aqua;
+    font-family: 'Inter', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+#word-info {
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.container {
+    width: 1000px;
+    margin: 50px auto;
+    /* background-color: rgb(255, 0, 0)  ; */
+}
+
+.game-container {
+    /* text-align: center; */
+    margin-top: 60px;
+    margin-bottom: 350px;
+    /* padding-left: 160px; */
+}
+
+
+.word-box {
+    text-align: center;
+    background-color:white;
+    padding: 10px 200px;
+    border-radius: 90px;
+}
+
+#hangman-word {
+
+    
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 20px;
+    color:rgb(47, 47, 47);
+}
+
+.letter {
+    display: inline-block;
+    text-decoration: underline;
+    margin-right: 10px;
+}
+
+.game-info {
+    display: flex;
+    justify-content: center;
+    
+    gap: 10px;
+}
+
+.mistakes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(184, 184, 184);
+    width: 40px;
+    height: 40px;
+    font-size: 35px;
+    background-color: white;
+    border-radius: 90px;
+}
+
+.made-mistakes {
+    background-color: red;
+    color: white;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
+}
+
+
+.modal-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    background-color: #fefefe;
+    margin: 13% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%; 
+    text-align: center;
+    border-radius: 90px;
+
+}
+  
+.close {
+    width: 6.5%;
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    border: 3px #332C39 solid;
+    border-radius: 50%;
+    padding: 5px;
+}
+  
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+img {
+    width: 400px;
+}

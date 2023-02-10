@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Hangman</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Hangman Game</h1>
+        <div class="game-container">
+            
+            <div class="modal">
+                <div class="modal-content">
+                    <img id="modal-img" src="img/win.png">
+                    <span class="close">&times;</span>
+                </div>
+            </div>
+
+            <p id="word-info">Word:</p>
+            <div class="word-box"><p id="hangman-word"></p></div>
+            
+            
+
+        </div>
+        <div class="game-info">
+            <div class="mistakes"><p>x</p></div>
+            <div class="mistakes"><p>x</p></div>
+            <div class="mistakes"><p>x</p></div>
+            <div class="mistakes"><p>x</p></div>
+            <div class="mistakes"><p>x</p></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
